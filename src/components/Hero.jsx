@@ -6,11 +6,13 @@ import { profile } from '../assets'
 
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen mx-auto'>
-      <div className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}>
-      <div className='flex flex-col justify-center items-center mt-5'>
+    <div className='relative w-full h-screen  mx-auto'>
+      
+      <div className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX}  flex xl:flex-row flex-col-reverse overflow-hidden gap-2`}>
+        <div className={`flex flex-row items-start gap-5`}>
+      <div className='flex flex-col justify-center items-center lg:mt-7  sm:mt-0'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-80 violet-gradient' />
+          <div className='w-1 sm:h-60 h-60 violet-gradient' />
         </div>
 
         <div>
@@ -18,19 +20,22 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Priyanshi</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Passionate software developer <br className='sm:block hidden' /> 
-            with a diverse tech stack and <br className='sm:block hidden' />
-             an unwavering commitment to<br className='sm:block hidden' /> learning and innovation. 
+            Versatile coder, passionate <br className='sm:block hidden' /> about innovation, and continuous 
+            <br className='sm:block hidden' /> learning
           </p>
         </div>
+        </div>
+       
+        
         <div>
-        <img src={profile} className='h-[20rem] w-[20rem] absolute bottom-[10rem] right-[8rem] rounded-full'/>
+        <img src={profile} className='lg:h-[20rem] lg:w-[20rem] rounded-full sm:h-[5rem] sm:w-[5rem] md:h-[10rem] md:w-[10rem] h-[10rem] w-[10rem]'/>
       </div>
-
+      
       </div>
      
+     
       
-      <ComputersCanvas/>
+      {/* <ComputersCanvas/> */}
 
       <div className='absolute xs:bottom-10 bottom-10 w-full flex justify-center items-center'>
         <a href='#about'>
@@ -49,7 +54,7 @@ const Hero = () => {
           </div>
         </a>
       </div>
-    </section>
+    </div>
   )
 }
 

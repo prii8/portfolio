@@ -45,16 +45,17 @@ import {
       title: "Web Developer",
       icon: web,
     },
-    {
-      title: "React Native Developer",
-      icon: mobile,
-    },
+    
     {
       title: "Backend Developer",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Data Science and Machine Learning",
+      icon: mobile,
+    },
+    {
+      title: "Generative AI",
       icon: creator,
     },
   ];

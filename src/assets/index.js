@@ -22,6 +22,14 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import sql from "./tech/sql.svg";
+import cpp from "./tech/cpp.png";
+import matplotlib from "./tech/matplotlib.png";
+import pandas from "./tech/pandas.png";
+import springboot from "./tech/springboot.png";
+import sqlA from "./tech/sqlA.png";
+import langchain from "./tech/langchain3.webp";
+import langchain1 from "./tech/langchain.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -32,6 +40,13 @@ import hashedin from "./company/hashedin.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import Social from"./Social.png";
+import Summarizer from "./Summarizer.png";
+import fakenews from "./fakenews.png";
+import youtube from "./youtube.png";
+import think from "./think.png";
+import bal from "./Balanced.png";
+import play from "./play.png";
 
 export {
   logo,
@@ -65,4 +80,19 @@ export {
   profile,
   logo1,
   hashedin,
+  cpp,
+  sql,
+  sqlA,
+  langchain,
+  springboot,
+  pandas,
+  matplotlib,
+  Social,
+  Summarizer,
+  fakenews,
+  langchain1,
+  youtube,
+  think,
+  bal,
+  play,
 };

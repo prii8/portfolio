@@ -24,6 +24,20 @@ import {
     tripguide,
     threejs,
     hashedin,
+    sqlA,
+    springboot,
+    pandas,
+    sql,
+    cpp,
+    matplotlib,
+    langchain,
+    langchain1,
+    fakenews,
+    Summarizer,
+    Social,
+    youtube,
+    think,
+    bal,
   } from "../assets";
   
   export const navLinks = [
@@ -74,10 +88,7 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+    
     {
       name: "React JS",
       icon: reactjs,
@@ -91,12 +102,12 @@ import {
       icon: tailwind,
     },
     {
-      name: "Node JS",
-      icon: nodejs,
+      name: "Java spring boot",
+      icon: springboot,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "flask SqlAlchemy",
+      icon: sqlA,
     },
     {
       name: "Three JS",
@@ -106,9 +117,18 @@ import {
       name: "git",
       icon: git,
     },
+   
     {
-      name: "figma",
-      icon: figma,
+      name: "sql",
+      icon: sql,
+    },
+    {
+      name: "cpp",
+      icon: cpp,
+    },
+    {
+      name: "lang",
+      icon: langchain1,
     },
     {
       name: "docker",
@@ -124,10 +144,11 @@ import {
       iconBg: "#383E56",
       date: "May 2023 - August 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        `Completed a 3-month intensive training program with Diversetracks, 
+        encompassing software development and trending technologies.`,
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Gained hands-on experience with both frontend and backend technologies .",
+        "Participating in code reviews and providing constructive feedback to other developers, fostering a culture of continuous improvement.",
       ],
     }
   ];
@@ -161,67 +182,127 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "BalancedBite",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        " Balanced Bite is a web-based application that calculates personalized caloric and macronutrient targets for users, recommending meals to help them achieve their specific health and fitness goals. Key features include real-time tracking and progress visualization.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "flask-sqlAlchemy",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Langchain",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      preview:true,
+      image: bal,
+      source_code_link: "https://github.com/prii8/BalancedBite-frontend",
     },
     {
-      name: "Job IT",
+      name: "Think Think Create",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "It is an application that enables users to design custom t-shirts by providing prompts or descriptions. It seamlessly combines AI, React, Three.js, and Frame Motion, allowing users to effortlessly customize and visualize shirt designs.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "three.js",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "openAI",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      preview:true,
+      image: think,
+      source_code_link: "https://github.com/prii8/shirt-design-using-Ai",
     },
     {
-      name: "Trip Guide",
+      name: "Youtube clone",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "The YouTube Clone project is a web application meticulously crafted using HTML and CSS. It seeks to faithfully replicate the iconic YouTube homepage, taking great care to reproduce every aspect and detail.",
       tags: [
         {
-          name: "nextjs",
+          name: "Html",
           color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
         },
         {
           name: "css",
+          color: "green-text-gradient",
+        },
+       
+      ],
+      preview:false,
+      image: youtube,
+      source_code_link: "https://github.com/prii8/YouTube-clone",
+    },
+    {
+      name: "Fake News Detection",
+      description:
+        "The Fake News Detection project is an NLP endeavor that employs deep learning models like CNN, LSTM, and a hybrid CNN-LSTM model to distinguish real from fake news articles. ",
+      tags: [
+        {
+          name: "Python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "LSTM",
+          color: "green-text-gradient",
+        },
+        {
+          name: "CNN",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      preview:false,
+      image: fakenews,
+      source_code_link: "https://github.com/prii8/Fake-News-Detection-using-Deep-learning",
+    },
+    {
+      name: "Social Media Platform (APIs)",
+      description:
+        "Powered by Java Spring Boot, this API platform facilitates seamless social networking with comprehensive CRUD functionality for users, posts, and comments. ",
+      tags: [
+        {
+          name: "Java",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "spring boot",
+          color: "green-text-gradient",
+        },
+        
+      ],
+      preview:false,
+      image: Social,
+      source_code_link: "https://github.com/prii8/socialmediaplatform-JavaSpringboot-",
+    },
+    {
+      name: "Document Summarizer and chatbot",
+      description:
+        "This versatile solution allows users to upload documents and obtain concise summaries, as well as engage in  Q&A sessions directly sourced from the uploaded documents.",
+      tags: [
+        {
+          name: "Langchain",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Python",
+          color: "green-text-gradient",
+        },
+        
+      ],
+      preview:false,
+      image: Summarizer,
+      source_code_link: "https://github.com/prii8/doc_summarizer_and_chatbot_using_langchain",
     },
   ];
   

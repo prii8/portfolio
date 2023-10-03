@@ -47,11 +47,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        Hello, I'm Priyanshi, a budding software developer with a passion for coding, 
+        innovation, and continuous learning. I've worked on projects spanning React, 
+        Java Spring Boot, Flask SQLAlchemy, Machine Learning, and Generative AI. 
+        I thrive on challenges and am a quick learner, adept at collaborating within teams.
+        Let's join forces and create something remarkable together.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

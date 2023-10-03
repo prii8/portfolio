@@ -3,10 +3,23 @@ import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github ,play} from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { useState } from "react";
+
+
+const VideoCard =()=>{
+  return (
+    <>
+    <div className="absolute top-[10rem] left-[10rem] right-[10rem] bottom-[10rem] bg-tertiary w-full h-[60%] z-10 ">
+
+    </div>
+    </>
+  )
+
+};
 
 const ProjectCard = ({
   index,
@@ -15,7 +28,11 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  preview,
 }) => {
+  const [video,setVideo]=useState('false');
+
+  
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -48,9 +65,17 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
+          <div className={`flex justify-between`}>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <img  src={play} onClick={()=>{setVideo(!video)}} className={`${preview?"w-[3rem] h-[3rem] object-contain cursor-pointer":"hidden"}` } />
+          </div>
+          
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
+
+        {/* <div>
+          {video && (<VideoCard/>)}
+        </div> */}
 
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
@@ -68,6 +93,7 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -82,13 +108,12 @@ const Works = () => {
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          links to code repositories . It reflects myability to solve complex problems, 
+          work with different technologies,and manage projects effectively.
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-5'>
+      <div className='mt-20 flex flex-wrap gap-5 justify-center'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

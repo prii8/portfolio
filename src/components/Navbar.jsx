@@ -7,7 +7,7 @@ import { logo1,menu,close } from '../assets'
 
 const Navbar = () => {
   const[active,setactive]=useState('');
-  const[toggle,setToggle]=useState('false');
+  const[toggle,setToggle]=useState(false);
 
   return (
     <nav

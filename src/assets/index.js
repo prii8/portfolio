@@ -31,15 +31,9 @@ import sqlA from "./tech/sqlA.png";
 import langchain from "./tech/langchain3.webp";
 import langchain1 from "./tech/langchain.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 import hashedin from "./company/hashedin.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+
 import Social from"./Social.png";
 import Summarizer from "./Summarizer.png";
 import fakenews from "./fakenews.png";
@@ -47,8 +41,10 @@ import youtube from "./youtube.png";
 import think from "./think.png";
 import bal from "./Balanced.png";
 import play from "./play.png";
+import propic from "./propic.png"
 
 export {
+  propic,
   logo,
   backend,
   creator,
@@ -70,13 +66,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
   profile,
   logo1,
   hashedin,

@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 
-import { profile } from '../assets'
+import { profile,propic } from '../assets'
 
 const Hero = () => {
   return (
@@ -29,7 +29,7 @@ const Hero = () => {
        
         
         <div>
-        <img src={profile} className='lg:h-[20rem] lg:w-[20rem] rounded-full sm:h-[5rem] sm:w-[5rem] md:h-[10rem] md:w-[10rem] h-[10rem] w-[10rem]'/>
+        <img src={propic} className='lg:h-[20rem] lg:w-[20rem] rounded-full sm:h-[5rem] sm:w-[5rem] md:h-[10rem] md:w-[10rem] h-[10rem] w-[10rem]'/>
       </div>
       
       </div>

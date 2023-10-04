@@ -15,13 +15,6 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     hashedin,
     sqlA,
@@ -77,9 +70,14 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
+      name: "cpp",
+      icon: cpp,
     },
+    {
+      name: "sql",
+      icon: sql,
+    },
+   
     {
       name: "CSS 3",
       icon: css,
@@ -93,14 +91,8 @@ import {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
+   
+    
     {
       name: "Java spring boot",
       icon: springboot,
@@ -108,6 +100,15 @@ import {
     {
       name: "flask SqlAlchemy",
       icon: sqlA,
+    },
+    
+    {
+      name: "lang",
+      icon: langchain1,
+    },
+    {
+      name: "HTML 5",
+      icon: html,
     },
     {
       name: "Three JS",
@@ -117,18 +118,13 @@ import {
       name: "git",
       icon: git,
     },
-   
     {
-      name: "sql",
-      icon: sql,
+      name: "Redux Toolkit",
+      icon: redux,
     },
     {
-      name: "cpp",
-      icon: cpp,
-    },
-    {
-      name: "lang",
-      icon: langchain1,
+      name: "Tailwind CSS",
+      icon: tailwind,
     },
     {
       name: "docker",
@@ -199,7 +195,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      preview:true,
+      preview:false,
       image: bal,
       source_code_link: "https://github.com/prii8/BalancedBite-frontend",
     },
@@ -221,7 +217,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      preview:true,
+      preview:false,
       image: think,
       source_code_link: "https://github.com/prii8/shirt-design-using-Ai",
     },

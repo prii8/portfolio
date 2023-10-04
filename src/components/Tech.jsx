@@ -5,9 +5,15 @@ import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 
 const Tech = () => {
+  const maxTechCountMobile = 8;
+  const isMobile = window.innerWidth <= 768;
+  const displayedTechnologies = isMobile
+    ? technologies.slice(0, maxTechCountMobile)
+    : technologies;
+
   return (
     <div className='flex flex-row flex-wrap justify-center gap-10'>
-      {technologies.map((technology) => (
+      {displayedTechnologies.map((technology) => (
         <div className='w-28 h-28' key={technology.name}>
           <BallCanvas icon={technology.icon} />
         </div>
